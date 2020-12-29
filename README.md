@@ -7,7 +7,7 @@ all the processing should be able to do in Colab environment with all its advant
 * Function for downloading and saving m3u8 stream to mp4 file with given length per a piece in Colab
 * snippet for cuuting/triming video with recompilation to avoid problems with broken frames
 * snippets to slow down speed up audion 
-* snippets to slow down speed up audion 
+
 
 
 
