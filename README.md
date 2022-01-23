@@ -13,16 +13,18 @@ all the processing should be able to do in Colab environment with all its advant
 Colab is conviniet when you dont care about privacy though for some operations with private file like 
 changing converting your private videos I recomend using ffmpeg on local machine.
 Someone could say that installing whole environment could take  a while and will not be so simple.
-Then what for once you have docker some ready to use image and then temporary container could be utilised
+Then what for once you have docker some ready to use image and then temporary container could be utilised.
 
-I need to mention here 
-about excellent work of 
+I need to mention here excellent work of  the  Julien Rottenberg's team  
+[github](https://github.com/jrottenberg/ffmpeg)
 
 
+You can install the latest build of this image by running docker pull jrottenberg/ffmpeg:${VERSION}-${VARIANT} or docker pull ghcr.io/jrottenberg/ffmpeg:${VERSION}-${VARIANT}.
+
+Example which is converting high resolution video to from handy to some  rescaled  mp4 640x ... is below
 
 ```
-# curl + grep
-VERSION=$(curl --silent https://api.github.com/repos/docker/compose/releases/latest | grep -Po '"tag_name": "\K.*\d')
+xxx@xxxxx:~$ docker run --rm -d -v $(pwd):$(pwd) -w $(pwd) --name mp4-converter jrottenberg/ffmpeg:4.4-ubuntu -i /mnt/c/docker_out/ffmpeg/dzia/po3.mp4 -vf scale=640:-1 /mnt/c/docker_out/ffmpeg/dzia/_po3.mp4
 ```
 and using then CURL
 
