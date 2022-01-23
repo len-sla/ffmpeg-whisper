@@ -16,6 +16,7 @@ Someone could say that installing whole environment could take  a while and will
 Then what for once you have docker some ready to use image and then temporary container could be utilised.
 
 I need to mention here excellent work of  the  Julien Rottenberg's team  
+https://github.com/jrottenberg/ffmpeg
 [github](https://github.com/jrottenberg/ffmpeg)
 
 
@@ -56,5 +57,5 @@ Notebook is divided on universal fuctions whicht  could be easlily used elsewher
 
 
 ### Contact
-Created by: _len.sla_
+Created by: _lencz.sla@gmail.com_
 
