@@ -10,14 +10,16 @@ all the processing should be able to do in Colab environment with all its advant
 
 
 ---
+### Colab
 Colab is conviniet when you dont care about privacy though for some operations with private file like 
 changing converting your private videos I recomend using ffmpeg on local machine.
 Someone could say that installing whole environment could take  a while and will not be so simple.
 Then what for once you have docker some ready to use image and then temporary container could be utilised.
 
+### Local with docker
 I need to mention here excellent work of  the  Julien Rottenberg's team  
 https://github.com/jrottenberg/ffmpeg
-[github](https://github.com/jrottenberg/ffmpeg)
+
 
 
 You can install the latest build of this image by running:
