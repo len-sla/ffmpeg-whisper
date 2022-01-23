@@ -19,8 +19,10 @@ I need to mention here excellent work of  the  Julien Rottenberg's team
 [github](https://github.com/jrottenberg/ffmpeg)
 
 
-You can install the latest build of this image by running docker pull jrottenberg/ffmpeg:${VERSION}-${VARIANT} or docker pull ghcr.io/jrottenberg/ffmpeg:${VERSION}-${VARIANT}.
-
+You can install the latest build of this image by running:
+```
+docker pull jrottenberg/ffmpeg:${VERSION}-${VARIANT} or docker pull ghcr.io/jrottenberg/ffmpeg:${VERSION}-${VARIANT}.
+```
 Example which is converting high resolution video to from handy to some  rescaled  mp4 640x ... is below( working like charm)
 
 ```
@@ -31,11 +33,12 @@ about my example after -i( interactive)  flag is path with input file _/mnt/c/do
 _/mnt/c/docker_out/ffmpeg/dzia/_po3.mp4_
 
 
+---
 
 ### Technologies
 * Python, 
 * ffmpeg, 
-
+* docker,
 
 ### Setup
 easiest is to install/update libraries accordnig to install secion in notebook
