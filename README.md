@@ -36,6 +36,19 @@ excellent guides are there but giving short info
 about my example after -i( interactive)  flag is path with input file _/mnt/c/docker_out/ffmpeg/dzia/po3.mp4_ and otput file 
 _/mnt/c/docker_out/ffmpeg/dzia/_po3.mp4_
 
+If there is need to converte whole directory this time to change a bit subject convertig mp3 to wav format then preparing some bash script where  docker converter is inside do the job.
+Content of the script could be as follows:
+
+```
+for i in *.mp3;
+
+	do	docker run --rm -d -v $(pwd):$(pwd) -w $(pwd) --name gif-converter jrottenberg/ffmpeg:4.4-ubuntu -i "$i" -acodec pcm_s16le -ar 16000 -ac 1 "$(basename "$i" .mp3)".wav  ;
+	name=`echo "$i" | cut -d'.' -f1`;
+	echo "$name"	;
+
+	sleep 1
+done
+```
 
 ---
 
