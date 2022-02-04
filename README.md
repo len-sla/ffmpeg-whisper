@@ -56,6 +56,7 @@ done
 * Python, 
 * ffmpeg, 
 * docker,
+* bash,
 
 ### Setup
 easiest is to install/update libraries accordnig to install secion in notebook
