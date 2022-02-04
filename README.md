@@ -36,7 +36,7 @@ excellent guides are there but giving short info
 about my example after -i( interactive)  flag is path with input file _/mnt/c/docker_out/ffmpeg/dzia/po3.mp4_ and otput file 
 _/mnt/c/docker_out/ffmpeg/dzia/_po3.mp4_
 
-If there is need to converte whole directory this time to change a bit subject convertig mp3 to wav format then preparing some bash script where  docker converter is inside do the job.
+If there is need to convert whole directory this time (to change a bit subject convertig mp3 to wav format) then preparing some bash script where  docker converter is inside do the job.
 Content of the script could be as follows:
 
 ```
