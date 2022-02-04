@@ -39,6 +39,7 @@ _/mnt/c/docker_out/ffmpeg/dzia/_po3.mp4_
 If there is need to convert whole directory this time (to change a bit subject convertig mp3 to wav format) then preparing some bash script where  docker converter is inside do the job.
 Content of the script could be as follows:
 
+
 ```
 for i in *.mp3;
 
