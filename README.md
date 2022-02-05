@@ -55,7 +55,7 @@ done
 You need to be careful with allocating resources in this case CPU( _--cpus 3_) I limited that to 3  ( it is not particularly memory intensive process convertig 200MB file to 1Mb rate uses ~300MB memory.
 Once you allocate resources batch will take care about whole process utilising machine resources withing given limit.
 
-
+![###  ](bitrate-table.JPG)
 
 ---
 
