@@ -50,7 +50,12 @@ for i in *.mp4;
 	sleep 1
 done
 ```
+
+
 You need to be careful with allocating resources in this case CPU( _--cpus 3_) I limited that to 3  ( it is not particualry memory intensive process convertig 200MB file to 1Mb uses ~300MB memory
+
+
+
 ---
 
 ### Technologies
