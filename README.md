@@ -41,16 +41,16 @@ Content of the script could be as follows:
 
 
 ```
-for i in *.mp3;
+for i in *.mp4;
 
-	do	docker run --rm -d -v $(pwd):$(pwd) -w $(pwd) --name gif-converter jrottenberg/ffmpeg:4.4-ubuntu -i "$i" -acodec pcm_s16le -ar 16000 -ac 1 "$(basename "$i" .mp3)".wav  ;
+	do	docker run --rm -d -v $(pwd):$(pwd) -w $(pwd) --cpus 3 --name "$i" jrottenberg/ffmpeg:4.4-ubuntu -i "$i" -b:v 1M  "$(basename "$i" .mp4)"_re.mp4  ;
 	name=`echo "$i" | cut -d'.' -f1`;
 	echo "$name"	;
 
 	sleep 1
 done
 ```
-
+You need to be careful with allocating resources in this case CPU( _--cpus 3_) I limited that to 3  ( it is not particualry memory intensive process convertig 200MB file to 1Mb uses ~300MB memory
 ---
 
 ### Technologies
