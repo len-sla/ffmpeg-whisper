@@ -10,7 +10,7 @@ all the processing should be able to do in Colab environment with all its advant
 
 
 ---
-### Colab
+### [Colab](g_pre_post_process.ipynb)
 Colab is conviniet when you dont care about privacy though for some operations with private file like 
 changing converting your private videos I recomend using ffmpeg on local machine.
 Someone could say that installing whole environment could take  a while and will not be so simple.
