@@ -45,16 +45,20 @@ docker build -t my_image_name .
 ```
 and running 
 ```
-docker run --rm -p 8888:8888 -v $(pwd):
+docker run --rm  -p 8888:8888 -v $(pwd):$(pwd) -w $(pwd) --cpus 2 --name whispi my_image_name
 ```
+
+whispi is temporary name for container 
+
+I limited usage to2 CPU to avoid crashes of host system
+
 It was tested on base model and  english 2min stress.mp3 from Hubermanlab   polish stan-pl.mp3 from onet.pl
 to check other lenguage performance.
 Result as expected are stunning.
 
 ![whisper in jupyterlab](whisper.png)
 
-
-
+Things to improve removing security issues from image root etc puting CUDA in Dockerfie 
 
 ##   Auxilary tools and solution for pre/post
 processing of audio and video based on ffmpeg and other open source tools
