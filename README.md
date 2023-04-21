@@ -1,8 +1,65 @@
-## Project Name
-> Auxilary tools and solution for pre/post
-processing of audio and video based on ffmpeg
+## FFmpeg and docker plus Whisper power of transcripting
 
-### General info
+
+
+"Whisper is an open-source Python package developed by OpenAI that provides speech recognition capabilities. More information about Whisper can be found on their GitHub page (https://github.com/openai/whisper). I was interested in using Whisper to transcribe my own MP3 files in a private environment.
+
+To avoid polluting my own OS, I decided to build a Docker image and perform all my trials within the container. I shared a directory with the Docker container and prepared Python or Bash scripts locally to execute on specific directories or files.
+
+Summary of potential for most common lanugaes are  impressive based on the picture from  their github ![github ](https://raw.githubusercontent.com/openai/whisper/main/language-breakdown.svg)
+
+To create the Docker image, I started with a lightweight Python 3.9 slim-buster image with FFMPEG content and JupyterLab, which was around 800MB in size. I then followed the instructions for installing Whisper on a standard Linux environment and translated them into the content for my Dockerfile.
+
+While creating the Docker image, I encountered some issues, such as missing libraries that needed to be updated one by one. Initially, I did not address security issues, such as allowing root in the Docker container, which could  threaten the host OS.
+
+The final Dockerfile is provided below, and the size is about 8GB, mostly due to the PyTorch framework."
+
+```
+FROM python:3.9-slim-buster
+
+# Install dependencies git was required
+RUN apt-get update && \
+    apt-get install -y ffmpeg git
+
+# Install JupyterLab, FFMPEG-Python, and PyTorch
+RUN pip install --upgrade  jupyterlab ffmpeg-python torch==1.10.1 torchvision torchaudio -f https://download.pytorch.org/whl/cu111/torch_stable.html tqdm tiktoken numba
+ 
+# https://github.com/openai/whisper
+# Install whisper
+RUN pip install --upgrade --no-deps --force-reinstall git+https://github.com/openai/whisper.git
+
+# Set the working directory
+WORKDIR /app
+ENV JUPYTER_PORT 8888
+
+
+# Launch JupyterLab
+CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root"]
+
+```
+### Build the Docker image:
+Once you have created the Dockerfile, you can build the Docker image using the following command:
+
+```
+docker build -t my_image_name .
+```
+and running 
+```
+docker run --rm -p 8888:8888 -v $(pwd):
+```
+It was tested on base model and  english 2min stress.mp3 from Hubermanlab   polish stan-pl.mp3 from onet.pl
+to check other lenguage performance.
+Result as expected are stunning.
+
+
+
+
+
+
+##   Auxilary tools and solution for pre/post
+processing of audio and video based on ffmpeg and other open source tools
+
+### Processing mp4 files using Colab
 all the processing should be able to do in Colab environment with all its advantages and constrains
 * Function for downloading and saving m3u8 stream to mp4 file with given length per a piece in Colab
 * snippet for cuuting/triming video with recompilation to avoid problems with broken frames
@@ -17,7 +74,7 @@ Someone could say that installing whole environment could take  a while and will
 Then what for once you have docker some ready to use image and then temporary container could be utilised.
 
 ---
-### Local with docker
+### processing mp4 files using bash script and ffmpeg installed in Docker environment to avoid polluting OS
 I need to mention here excellent work of  the  Julien Rottenberg's team  
 https://github.com/jrottenberg/ffmpeg
 
