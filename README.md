@@ -59,6 +59,7 @@ Result as expected are stunning.
 ![whisper in jupyterlab](whisper.png)
 
 Things to improve removing security issues from image root etc puting CUDA in Dockerfie 
+optimising RUN to avoid creating extra layers 
 
 ##   Auxilary tools and solution for pre/post
 processing of audio and video based on ffmpeg and other open source tools
