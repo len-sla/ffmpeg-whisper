@@ -51,7 +51,7 @@ It was tested on base model and  english 2min stress.mp3 from Hubermanlab   poli
 to check other lenguage performance.
 Result as expected are stunning.
 
-
+![whisper in jupyterlab](whisper.png)
 
 
 
