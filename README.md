@@ -58,7 +58,7 @@ Result as expected are stunning.
 
 ![whisper in jupyterlab](whisper.png)
 
-Things to improve removing security issues from image root etc puting CUDA in Dockerfie 
+Things to improve removing security issues from image root etc  in Dockerfie 
 optimising RUN to avoid creating extra layers 
 
 ##   Auxilary tools and solution for pre/post
