@@ -71,7 +71,7 @@ all the processing should be able to do in Colab environment with all its advant
 * snippets to slow down speed up audion 
 
 you could alse use extra gradio to have simpke and elegant solution for front end for all kinds of application. including processing mp3 files in batch but under graphical interface
-example is included [](whisper-in-colab-batch-microphe-mp3-conversion-with-gradio.ipynb)
+example is included [whisper-in-colab-batch-microphe-mp3-conversion-with-gradio.ipynb](whisper-in-colab-batch-microphe-mp3-conversion-with-gradio.ipynb)
 
 ---
 ### [Colab](https://github.com/len-sla/ffmpeg/blob/main/Using_ffmpeg_pre_post_process.ipynb)
