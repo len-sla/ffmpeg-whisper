@@ -70,8 +70,14 @@ all the processing should be able to do in Colab environment with all its advant
 * snippet for cuuting/triming video with recompilation to avoid problems with broken frames
 * snippets to slow down speed up audion 
 
-you could alse use extra gradio interface  to have simlke and elegant GIU solution for front end for all kinds of application:
+you could alse use extra gradio interface  to have simple and elegant GIU solution for front end for all kinds of application:
 including processing mp3 files in batch 
+mp3 fole was choped to 30s pieces with ffmpeg so the 
+audio.shape os equl  (480000,)
+
+
+
+
 ---
 example is included [whisper-in-colab-batch-microphe-mp3-conversion-with-gradio.ipynb](whisper-in-colab-batch-microphe-mp3-conversion-with-gradio.ipynb)
 
