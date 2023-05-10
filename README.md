@@ -10,7 +10,7 @@ Summary of potential for most common lanugaes are  impressive based on the pictu
 
 To create the Docker image, I started with a lightweight Python 3.9 slim-buster image with FFMPEG content and JupyterLab, which was around 800MB in size. I then followed the instructions for installing Whisper on a standard Linux environment and translated them into the content for my Dockerfile.
 
-While creating the Docker image, I encountered some issues, such as missing libraries that needed to be updated one by one. Initially, I did not address security issues, such as allowing root in the Docker container, which could  threaten the host OS.
+While creating the Docker image, I encountered some issues, such as missing libraries that required updates one by one. Initially, I did not address security issues, such as allowing root in the Docker container, which could  threaten the host OS.
 
 The final Dockerfile is provided below, and the size is about 8GB, mostly due to the PyTorch framework."
 
@@ -50,7 +50,7 @@ docker run --rm  -p 8888:8888 -v $(pwd):$(pwd) -w $(pwd) --cpus 2 --name whispi 
 
 whispi is temporary name for container 
 
-I limited usage to2 CPU to avoid crashes of host system
+I limited usage to 2 CPU to avoid crashes of host system
 
 It was tested on base model and  english 2min stress.mp3 from Hubermanlab   polish stan-pl.mp3 from onet.pl
 to check other lenguage performance.
@@ -70,7 +70,9 @@ all the processing should be able to do in Colab environment with all its advant
 * snippet for cuuting/triming video with recompilation to avoid problems with broken frames
 * snippets to slow down speed up audion 
 
-you could alse use extra gradio to have simpke and elegant solution for front end for all kinds of application. including processing mp3 files in batch but under graphical interface
+you could alse use extra gradio interface  to have simlke and elegant GIU solution for front end for all kinds of application:
+including processing mp3 files in batch 
+---
 example is included [whisper-in-colab-batch-microphe-mp3-conversion-with-gradio.ipynb](whisper-in-colab-batch-microphe-mp3-conversion-with-gradio.ipynb)
 
 ---
