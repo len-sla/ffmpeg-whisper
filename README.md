@@ -75,6 +75,9 @@ including processing mp3 files in batch
 ---
 example is included [whisper-in-colab-batch-microphe-mp3-conversion-with-gradio.ipynb](whisper-in-colab-batch-microphe-mp3-conversion-with-gradio.ipynb)
 
+![gradio](gradio.JPG)
+![gradio1](gradio1.JPG)
+
 ---
 ### [Colab](https://github.com/len-sla/ffmpeg/blob/main/Using_ffmpeg_pre_post_process.ipynb)
 Colab is conviniet when you dont care about privacy though for some operations with private file like 
