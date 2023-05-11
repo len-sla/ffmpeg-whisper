@@ -70,7 +70,7 @@ all the processing should be able to do in Colab environment with all its advant
 * snippet for cuuting/triming video with recompilation to avoid problems with broken frames
 * snippets to slow down speed up audion 
 
-you could alse use extra gradio interface  to have simple and elegant GIU solution for front end for all kinds of application:
+you could usegradio interface  to have simple and elegant GUI solution for front end for all kinds of application including this one:
 including processing mp3 files in batch 
 mp3 file was chopped to 30s pieces with ffmpeg so the 
 audio.shape os equal  (480000,)
