@@ -92,9 +92,9 @@ then transcribed and summarised with google Pegasus summariser
 <!-- [whisper-in-colab-batch-microphe-mp3-conversion-with-gradio.ipynb](whisper-in-colab-batch-microphe-mp3-conversion-with-gradio.ipynb) -->
 [https://github.com/len-sla/ffmpeg-whisper/blob/main/All_in_one_mp3_chop_transcribe_summarise.ipynb](https://github.com/len-sla/ffmpeg-whisper/blob/main/All_in_one_mp3_chop_transcribe_summarise.ipynb)
 
-Of course you could use other summariser but they ar enot so spectacular in results in the so called o shot attempt 
-My comparison and notebook is here
-
+Of course you could use other summariser but they are not so spectacular in results in the so called 0 shot attempt 
+My comparison and notebook is below
+https://github.com/len-sla/NLP-BERT/blob/master/Ssummarise--T5_GPT-Graph-Longformer_Pegasus.ipynb
 
 ---
 ### [Colab](https://github.com/len-sla/ffmpeg/blob/main/Using_ffmpeg_pre_post_process.ipynb)
