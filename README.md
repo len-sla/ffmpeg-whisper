@@ -88,7 +88,7 @@ example is included [whisper-in-colab-batch-microphe-mp3-conversion-with-gradio.
 If you need to quckly get overview of what particular conversation, mp4, mp4 is all about there is ready to use nootbook
 as example 2.5h mp3 file was taken  https://hubermanlab.com/how-to-breathe-correctly-for-optimal-health-mood-learning-and-performance/ from well known Dr. Huberman ( Stanford)
 then transcribed and summarised with google Pegasus summariser
-
+![whisper in jupyterlab](wh.gif)
 <!-- [whisper-in-colab-batch-microphe-mp3-conversion-with-gradio.ipynb](whisper-in-colab-batch-microphe-mp3-conversion-with-gradio.ipynb) -->
 [https://github.com/len-sla/ffmpeg-whisper/blob/main/All_in_one_mp3_chop_transcribe_summarise.ipynb](https://github.com/len-sla/ffmpeg-whisper/blob/main/All_in_one_mp3_chop_transcribe_summarise.ipynb)
 
