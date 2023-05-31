@@ -85,7 +85,7 @@ example is included [whisper-in-colab-batch-microphe-mp3-conversion-with-gradio.
 ![gradio1](gradio1.JPG)
 
 
-If you need to quckly get overview of what particular conversation, mp4, mp4 is all about there is ready to use nootbook
+If you need to quickly get overview of what particular conversation, mp4, mp4 is all about there is ready to use nootbook
 as example 2.5h mp3 file was taken  https://hubermanlab.com/how-to-breathe-correctly-for-optimal-health-mood-learning-and-performance/ from well known Dr. Huberman ( Stanford)
 then transcribed and summarised with google Pegasus summariser
 ![whisper in jupyterlab](wh.gif)
@@ -98,7 +98,7 @@ https://github.com/len-sla/NLP-BERT/blob/master/Ssummarise--T5_GPT-Graph-Longfor
 
 ---
 ### [Colab](https://github.com/len-sla/ffmpeg/blob/main/Using_ffmpeg_pre_post_process.ipynb)
-Colab is conviniet when you dont care about privacy though for some operations with private file like 
+Colab is convinient when you dont care about privacy though for some operations with private file like 
 changing converting your private videos I recomend using ffmpeg on local machine.
 Someone could say that installing whole environment could take  a while and will not be so simple.
 Then what for once you have docker some ready to use image and then temporary container could be utilised.
