@@ -61,16 +61,9 @@ Result as expected are stunning.
 Things to improve removing security issues from image root etc  in Dockerfie 
 optimising RUN to avoid creating extra layers 
 
-##   Auxilary tools and solution for pre/post
-processing of audio and video based on ffmpeg and other open source tools
 
-### Processing mp4 files using Colab
-all the processing should be able to do in Colab environment with all its advantages and constrains
-* Function for downloading and saving m3u8 stream to mp4 file with given length per a piece in Colab
-* snippet for cuuting/triming video with recompilation to avoid problems with broken frames
-* snippets to slow down speed up audion 
 
-you could usegradio interface  to have simple and elegant GUI solution for front end for all kinds of application including this one:
+you could use gradio interface  to have simple and elegant GUI solution for front end for all kinds of application including this one:
 including processing mp3 files in batch 
 mp3 file was chopped to 30s pieces with ffmpeg so the 
 audio.shape os equal  (480000,)
