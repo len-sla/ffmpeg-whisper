@@ -91,7 +91,7 @@ https://github.com/len-sla/NLP-BERT/blob/master/Ssummarise--T5_GPT-Graph-Longfor
 
 ---
 ### [Colab](https://github.com/len-sla/ffmpeg/blob/main/Using_ffmpeg_pre_post_process.ipynb)
-[](02_mp3_to_txt_whisper_then_translation_mbart.ipynb)
+[Whisper-to transcode and mbart50 to traslate colab notebook](02_mp3_to_txt_whisper_then_translation_mbart.ipynb)
 Colab is convinient when you dont care about privacy though for some operations with private file like 
 changing converting your private videos I recomend using ffmpeg on local machine.
 Someone could say that installing whole environment could take  a while and will not be so simple.
